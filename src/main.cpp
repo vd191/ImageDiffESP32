@@ -33,7 +33,7 @@ bool compareImages(camera_fb_t *img1, camera_fb_t *img2)
   for (int i = 0; i < img1->len; i++)
   {
     if (abs(img1->buf[i] - img2->buf[i]) > 20)
-    { // Ngưỡng khác biệt pixel
+    {
       pixel_diff++;
     }
   }
